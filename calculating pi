@@ -1,0 +1,14 @@
+import random
+c = s = pi = 0
+
+for i in range(10000000):
+    x = random.random()
+    y = random.random()
+    dist = (x*x + y*y)
+    
+    s += 1
+    if dist <= 1:
+        c += 1
+
+pi = 4 * c/s
+print (pi)
